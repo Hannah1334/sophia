@@ -1,0 +1,363 @@
+<script>resizeTo(screen.availWidth, screen.availHeight);</script>
+
+<style>
+body{
+background-image: url('http://i.imgur.com/SFfkeLK.jpg') !important; 
+background-repeat:repeat !important; 
+background-position:center !important; 
+background-size:contain;
+background-color:#fcb6b6;
+}
+
+::-webkit-scrollbar {width: 3px; height: 3px;}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {background: #d96c5f;}
+
+#circle1 {
+position:absolute;
+background-color:#D66C5E;
+border:1px solid #ff949d;
+border-radius:100%;
+width:13%;
+height:26%;
+left:28.5%;
+top:7%;
+}
+
+#picbox1 {
+position:absolute;
+background-color:#ffffff;
+border:1px solid #ff949d;
+border-radius:100%;
+width:10%;
+height:20%;
+left:30%;
+top:10%;
+background-image: url('https://i.imgur.com/2Hk2hc5.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#circle2 {
+position:absolute;
+background-color:#ffffff;
+border:1px solid #ff949d;
+border-radius:100%;
+width:13%;
+height:26%;
+left:43.5%;
+top:7%;
+}
+
+#picbox2 {
+position:absolute;
+background-color:#ffffff;
+border:1px solid #ff949d;
+border-radius:100%;
+width:10%;
+height:20%;
+left:45%;
+top:10%;
+background-image: url('https://i.imgur.com/4pM7jTf.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#circle3 {
+position:absolute;
+background-color:#FD929C;
+border:1px solid #ff949d;
+border-radius:100%;
+width:13%;
+height:26%;
+left:58.5%;
+top:7%;
+}
+
+#picbox3 {
+position:absolute;
+background-color:#ffffff;
+border:1px solid #ff949d;
+border-radius:100%;
+width:10%;
+height:20%;
+left:60%;
+top:10%;
+background-image: url('https://i.imgur.com/nC77kcR.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#rectangle {
+position:absolute;
+background-color:#D66C5E;
+border:1px solid #ff949d;
+width:42%;
+height:8%;
+left:29%;
+top:36.5%;
+}
+
+#tabbox {
+position:absolute;
+background-color:#ffffff;
+border:1px solid #ff949d;
+width:40%;
+height:5%;
+left:30%;
+top:38%;
+}
+
+#contentholder {
+position:absolute;
+background-color:#FD929C;
+border:1px solid #ff949d;
+width:42%;
+height:42.5%;
+left:29%;
+top:47%;
+}
+
+#content {
+position:absolute;
+overflow:auto;
+padding:1%;
+background-color:#ffffff;
+border:1px solid #ff949d;
+width:38%;
+height:34%;
+left:30%;
+top:49%;
+color:#ad4b50;
+font-family:Bubbler One;
+font-size:90%;
+}
+
+#friendbox {
+display:inline-block;
+background-color:#ff949d;
+padding:1%;
+width:31%;
+height:25%;
+font-size:80%;
+}
+
+.tabs {
+display:inline-block;
+padding:2%;
+width:5%;
+height:30%;
+margin-left:4%;
+margin-right:3%;
+text-align:center;
+color:#d96c5f;
+font-family:Crushed;
+font-size:100%;
+background-image: url('http://www.iconsplace.com/download/pink-music-256.gif') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:contain;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs:hover {
+color:#ad4b50;
+background-image: url('http://i.imgur.com/fyXydkr.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:contain;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6 {
+display: none;
+}
+
+i {
+color:#333333;
+font-size:80%;
+}
+
+a {
+color:#a33d36;
+}
+
+h1 {
+color: #ffffff;
+background-color:#ff949d;
+font-family: Crushed;
+text-align:center;
+font-size: 150%;
+}
+
+b {
+font-size: 100%;
+color:#ff949d;
+}
+</style>
+
+
+<style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur818.cur), progress !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Bubbler+One|Crushed" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
+
+<div id="circle1">
+</div>
+<div id="picbox1">
+</div>
+<div id="circle2">
+</div>
+<div id="picbox2">
+</div>
+<div id="circle3">
+</div>
+<div id="picbox3">
+</div>
+<div id="rectangle">
+</div>
+<div id="tabbox">
+<span class="tabs" onClick="changeNavigation ('tab1')">Details</span>
+<span class="tabs" onClick="changeNavigation ('tab2')">History</span>
+<span class="tabs" onClick="changeNavigation ('tab3')">Family</span>
+<span class="tabs" onClick="changeNavigation ('tab4')">Items</span>
+<span class="tabs" onClick="changeNavigation ('tab5')">Racials</span>
+<span class="tabs" onClick="changeNavigation ('tab6')">Spells</span>
+</div>
+<div id="contentholder">
+</div>
+<div id="content">
+<h1>Basic Information</h1>
+<img align="right" style="height:82%;" src="http://i.imgur.com/A85ugxq.jpg"/>
+<b>Name:</b> Sophia O'Connor<br>
+<b>Nickname:</b> Princess<br>
+<b>Age:</b> Fourteen<br>
+<b>Birthdate:</b> December 24th<br>
+<b>Gender:</b> Female<br>
+<b>Species:</b> Human<br>
+<b>Race:</b> French-Irish<br>
+<b>Tree:</b> Conjuration<br>
+<b>Rank:</b> True Practitioner<br>
+<b>Talent:</b> Musical Prodigy<br>
+<b>Instruments:</b> Guitar, Piano, Bass, Vocal<br>
+<b>Height:</b> 4'1"<br>
+<b>Weight:</b> 80 lbs.
+</div>
+
+<div id="tab1">
+<h1>Detailed Information</h1>
+<b>Appearance</b><br>
+Not very intimidating in the slightest. Even for a fourteen year old girl she still looks young, measuring only an inch above four feet in height with a tiny toothpick frame. Even though she is growing into her hourglass figure, her overall shape still leans toward the more childish side of the spectrum. Her face is still rounded, but adorable, with big red cheeks, a cute button nose, and huge emerald eyes that are so intensely green their color is beyond average human capacity. Long dark black hair heavily contrasts her already pale complexion, making her appear even lighter than she really is. Sophia very strongly embraces the fact that she's a girl, often decorating herself with bright pinks and purples, putting her hair up in cute bows, and overall making herself look as young and harmless as she possibly can.
+<br><br>
+<b>Personality</b><br>
+The term "spoiled brat" is putting it lightly. Sophia is incredibly self centered, and pines passionately for her father's attention, pursuing her ultimate goal of becoming his favorite kid. She cares very little for the desires and needs of others, barely offering anyone the time of day unless they have something to offer or benefit her in some way. She believes her heritage makes her better than everyone else, and never fails to show it, often causing her to come off as snobbish and cocky. While it is apparent that she does have some kind of talent to back up her claims, her sense of entitlement is over the top and gets her into scuffles more often than not. 
+</div>
+
+<div id="tab2">
+<h1>History & Lore</h1>
+There isn't much about the history of their family that this particular O'Connor actually knows. She is aware that they come from a long line of elite mage warriors, started by a strong willed Patriarch. Sophia also knows the line she comes from is actually a separate branch off from the original warriors of legend that were marked with the same last name. The current Patriarch of their branch is her father, but she's not the only one that can lay such a claim. He's sired many offspring, all with different human-based females from across the multiverse. These kids are always competing for the top spot in his favor, their common goal is to become strong enough to overthrow him and take his place as head of the family. Sophia assumes this means she needs to train directly under him, and has made it her primary focus to be the best of the best in his eyes. In fact she <i>has</i> done things to achieve this end, most of them questionable. Hopefully karma doesn't catch up before she even has the chance to reach for her dreams!
+<br><br>
+After some digging--to find out who else she needed to take out in order to get closer to her goal--the name Apollo O'Connor came up, so she sought him out to best him in battle. Unfortunately she overestimated her own ability, and in turn underestimated her opponent. Sophia ended up endebted to him for sparing her life despite challenging him to a deathmatch...and losing.
+</div>
+
+<div id="tab3">
+<h1>The O'Connor Roster</h1>
+<div id="friendbox">
+<a target="_blank" href="http://groove.chatango.com"><img align="left" style="height:79%;" src="http://fp.chatango.com/profileimg/g/r/groove/thumb.jpg"/></a>
+<a target="_blank" href="http://groove.chatango.com">Apollo O'Connor</a><br>
+"Groove"<br>
+<b><FONT COLOR="#ffffff">Half-Brother</FONT></b><br>
+<i>High Auror</i></div>
+<div id="friendbox">
+<a target="_blank" href="http://glass.chatango.com"><img align="left" style="height:79%;" src="http://fp.chatango.com/profileimg/g/l/glass/thumb.jpg"/></a>
+<a target="_blank" href="http://glass.chatango.com">Claire O'Connor</a><br>
+"Glass"<br>
+<b><FONT COLOR="#ffffff">Half-Sister</FONT></b><br>
+<i>High Archmage</i></div>
+<div id="friendbox">
+<a target="_blank" href="http://chatango.com"><img align="left" style="height:79%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
+<a target="_blank" href="http://chatango.chatango.com">???</a><br>
+"???"<br>
+<b><FONT COLOR="#ffffff">???</FONT></b><br>
+<i>???</i></div>
+<br><br>
+<div id="friendbox">
+<a target="_blank" href="http://chatango.com"><img align="left" style="height:79%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
+<a target="_blank" href="http://chatango.chatango.com">???</a><br>
+"???"<br>
+<b><FONT COLOR="#ffffff">???</FONT></b><br>
+<i>???</i></div>
+<div id="friendbox">
+<a target="_blank" href="http://chatango.com"><img align="left" style="height:79%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
+<a target="_blank" href="http://chatango.chatango.com">???</a><br>
+"???"<br>
+<b><FONT COLOR="#ffffff">???</FONT></b><br>
+<i>???</i></div>
+<div id="friendbox">
+<a target="_blank" href="http://chatango.com"><img align="left" style="height:79%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
+<a target="_blank" href="http://chatango.chatango.com">???</a><br>
+"???"<br>
+<b><FONT COLOR="#ffffff">???</FONT></b><br>
+<i>???</i></div>
+<br><br>
+<div id="friendbox">
+<a target="_blank" href="http://chatango.com"><img align="left" style="height:79%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
+<a target="_blank" href="http://chatango.chatango.com">???</a><br>
+"???"<br>
+<b><FONT COLOR="#ffffff">???</FONT></b><br>
+<i>???</i></div>
+<div id="friendbox">
+<a target="_blank" href="http://chatango.com"><img align="left" style="height:79%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
+<a target="_blank" href="http://chatango.chatango.com">???</a><br>
+"???"<br>
+<b><FONT COLOR="#ffffff">???</FONT></b><br>
+<i>???</i></div>
+<div id="friendbox">
+<a target="_blank" href="http://chatango.com"><img align="left" style="height:79%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
+<a target="_blank" href="http://chatango.chatango.com">???</a><br>
+"???"<br>
+<b><FONT COLOR="#ffffff">???</FONT></b><br>
+<i>???</i></div>
+</div>
+
+<div id="tab4">
+<h1>Inventory</h1>
+Sophia's entire magic tree surrounds conjuring tools for use, so this section is fairly sparse. The only things--aside from stuff like clothing, bodily accessories, makeup, and other princess grade "necessities"--found here are important family heirlooms. They hardly ever see use, but they still remain to be owned by her.
+<br><br>
+<b>Buckle</b><br>
+A rounded shield with a slight concave curve under its surface, the edges bladed to a very sharp point around its perimeter, just large enough to cover its wielder’s upper body with plenty of protection. This lightweight piece of hardy weaponry can be worn around the forearm via a brace. It seems to be made of a combination of emerald, ivory, and silver, depicting pictures of the official O’Connor sigil on its surface.
+<br><br>
+<b>Cutlass</b><br>
+Made of the exact same materials as the shield, this ornate Cutlass is a completely separate piece of equipment. The familiar emerald an ivory sigils are embedded into the knuckle-guard welded around the blade’s hilt. Gems are also embedded into the smooth silver of the actual blade, following the line of the curve, completing its over the top bedazzled look. As much as this pair of weapons looks more like pieces of decoration, they are still very durable and sharp.
+</div>
+
+<div id="tab5">
+<h1>True Practitioner Racials</h1>
+<i>"Once a Practioner has taken their craft so far, their secondary tree disappears all together. Their body will change, becoming a physical embodiment of their magic."</i>
+<br><br>
+<b>Sentient Gateway</b><br>
+Ascending to the rank of True Practitioner has slightly altered her state of existence. While most of her base human traits remain, she has the capacity to achieve a more advanced state of being. Sophia becoming the embodiment of Conjuration has translated into making her physical form the literal gateway between the plane of existence she resides in, and the far off pocket plane her magical tools reside in. This development has given her a few different abilities and modes, which are all extensions of this primary racial.
+<br>
+<i><u>Standby Mode:</u></i> Sophia is not required to be constantly calling on her Sentient Gateway racials; Standby Mode is effectively a state in which she remains base human in stats, appearance, etc. In this mode, nothing about her is enhanced or abnormal, and it would take very high ranking detection in order to see that she is something more in the first place. (High ranking = other True Practitioners. High Duomancers, High Archmages, and High Aurors would be able to get a sense with sensory that something is a little off, but details would be very hazy.)
+<br>
+<i><u>Battle Mode:</u></i> This is when she actively engages her magically enhanced racials. Battle Mode can be willingly activated whenever she has the mana to cast any of the spells available to her. It effectively connects her body to the plane her Conjurations come from, allowing her to summon them from her physical form instead of in the air if she so chooses. Manifesting her tools through herself has a number of positive effects, the first being that the mana cost for summoning her Conjurations is decently reduced (40%). She can also achieve a cost reduction on using the magical abilities her tools provide--as well as a reduction on the cost of their continuous drain--if she only partially summons them out of her body, making them stick out of her like very dangerous growths. Tools only “partially summoned” will have a higher cost if she decides to pull them all the way out before de-conjuring them. That being said, it is possible for her to violently propel half summoned weapons from her body as though they were projectiles, (speed of travel varying depending on size. Things that measure more than six feet only fly at x2 human speeds, anything less can achieve up to x4) but this ability does have a higher mana cost.
+<br>
+When she is using her physical form as a literal gateway (so when things are in the process of being summoned through her actual body) she achieves a momentary state of being that breaks down her physical makeup into nothing more than pure magical energy. This makes her completely immune to lesser-than-Tungsten solid magical materials, and lesser-than-Diamond nonmagic materials, but increasingly vulnerable to pure energy and magics designed to corrode or eat away at other magics. Her entire body only briefly achieves this state when fully summoning Conjurations through herself, and only lasts the amount of time it takes for the Conjuration to be fully summoned (she can drag that out if she really wants but it’ll be costly). There is, however, another option. If Sophia is only partially summoning a tool through her physical form, only part of her physical body remains in this state, that being the specific part the construct is being summoned through. (I.E. if she brings out a sword halfway through her palm, the arm will achieve the energy based state of being, but only that arm. It will remain that way until either being fully summoned or deconjured entirely.)
+<br>
+Sophia can also choose to shoot a fully summoned Conjuration out of her body like a projectile (the same speed parameters apply) without worrying about half-summoning it first.
+<br>
+<i><u>Overwhelmer:</u></i> When in Battle Mode, her general magical presence becomes very hostile, often causing a sensory overload for any such spells (so, sensory specific) attempting to be used on her that are not equal rank (equal rank being post high mage rank 2). This ability will cause: major discomfort in those who are using magical sensory on her that are one rank below her, legitimately stun those two ranks below for an entire rotation, very painfully stun those three ranks below for two rotations, and severely “permanently” injure anything/anyone more than three ranks below. Regardless of the afflicted’s rank, or the nature of their magical sensory, these harmful effects can be remedied by any Faith Mage at least High Mage in rank (or the equivalent level of a High Mage Faith Mage’s healing power for healing abilities that are outside of Faith).
+<br>
+<i><u>Enhanced Dexterity:</u></i> Sophia’s overall sense of balance, as well as her proficiency with using her limbs in various tasks, whether it be kick, punching, or using a weapon, is drastically enhanced when--you guessed it--Battle Mode is engaged. It increases to quadruple that of the average human’s capabilities. (x4 with a hard cap at x8)
+</div>
+
+<div id="tab6">
+<h1>Conjuration; True Practitioner</h1>
+<i>"Conjuration is the art of summoning objects to one's self for their own use. These objects will return to the storage dimension in which they came from after usage. These objects also may possess a very wide array of special properties, and may even be controlled telepathically by the Conjurer once a certain mastery has been achieved."</i>
+</div>
